@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="O melhor local para viajar é com a Caravan, mais de 5000 excursões concluídas.">
+        <title>Caravan - Inscrição</title>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/estilo.css">
+    </head>
+
+    <body>
+        <nav class="navbar p-3 navbar-expand-md fixed-top bg-light box-shadow">
+            <a class="navbar-brand" href="index.html"><img src="/img/caravan.svg" alt="Caravan"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir Navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown"><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="local.html">California</a>
+                            <a class="dropdown-item" href="local.html">Paris</a>
+                            <a class="dropdown-item" href="local.html">Dublin</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="planos.html">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="my-5 text-center">
+                <span class="h6 d-block">PROGRAME A VIAGEM DO SEU SONHO</span>
+                <h1 class="display-4 text-primary">INSCREVA-SE</h2>
+            </div>
+
+            <div class="row">
+                <form class="col-lg-6" action="">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="inscricao-nome" class="form-label">Nome</label>
+                            <input id="inscricao-nome" class="form-control" type="text" placeholder="Nome completo">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="inscricao-cpf" class="form-label">CPF</label>
+                            <input id="inscricao-cpf" class="form-control" type="text" placeholder="xxx.xxx.xxx-xx">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="inscricao-email" class="form-label">Email</label>
+                            <input id="inscricao-email" class="form-control" type="email" placeholder="Seu Email">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="inscricao-senha" class="form-label">Senha</label>
+                            <input id="inscricao-senha" class="form-control" type="password" placeholder="Senha de acesso">
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label for="inscricao-endereco" class="form-label">Endereço</label>
+                            <input id="inscricao-endereco" class="form-control" type="text" placeholder="Número, nome da rua e bairro">
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="inscricao-cidade" class="form-label">Cidade</label>
+                            <input id="inscricao-cidade" class="form-control" type="text">
+                        </div>
+
+                        <div class="col-md-3 col-6 mb-3">
+                            <label for="inscricao-estado" class="form-label">Estado</label>
+                            <select id="inscricao-estado" class="form-select">
+                                <option selected>Escolha...</option>
+                                <option>Acre</option>
+                                <option>Bahia</option>
+                                <option>Espírito Santo</option>
+                                <option>Goiás</option>
+                                <option>Minas Gerais</option>
+                                <option>Paraná</option>
+                                <option>Rio de Janeiro</option>
+                                <option>São Paulo</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3 col-6 mb-3">
+                            <label for="inscricao-cep" class="form-label">CEP</label>
+                            <input id="inscricao-cep" class="form-control" type="text" placeholder="xxxxx-xxx">
+                        </div>
+
+                    </div>
+
+                    <div class="bg-light p-3 rounded box-shadow">
+                        <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
+
+                        <nav id="forma-pagamento" class="nav btn-group mb-3" role="tablist">
+                            <button id="nav-cartao-tab" class="btn btn-sm btn-secondary active" type="button" data-bs-toggle="tab" data-bs-target="#nav-cartao" role="tab" aria-controls="nav-cartao" aria-selected="true">Cartão de Crédito</button>
+                            <button id="nav-boleto-tab" class="btn btn-sm btn-secondary" type="button" data-bs-toggle="tab" data-bs-target="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">Boleto Bancário</button>
+                        </nav>
+
+                        <div id="forma-pagamento-conteudo" class="tab-content">
+                            <div id="nav-cartao" class="tab-pane fade show active" role="tabpanel" aria-labelledby="nav-cartao-tab">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cartao-nome" class="form-label">Nome no Cartão</label>
+                                        <input id="cartao-nome" class="form-control" type="text" placeholder="Nome impresso no cartão">
+                                    </div>
+            
+                                    <div class="col-md-3 col-6 mb-3">
+                                        <label for="cartao-mes" class="form-label">Mês</label>
+                                        <select id="cartao-mes" class="form-select">
+                                            <option selected>Expira mês...</option>
+                                            <option>01</option>
+                                            <option>02</option>
+                                            <option>03</option>
+                                            <option>04</option>
+                                            <option>05</option>
+                                            <option>06</option>
+                                            <option>07</option>
+                                            <option>08</option>
+                                            <option>09</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                        </select>
+                                    </div>
+            
+                                    <div class="col-md-3 col-6 mb-3">
+                                        <label for="cartao-ano" class="form-label">Ano</label>
+                                        <select id="cartao-ano" class="form-select">
+                                            <option selected>Expira ano...</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                            <option>2027</option>
+                                            <option>2028</option>
+                                            <option>2029</option>
+                                            <option>2030</option>
+                                            <option>2031</option>
+                                            <option>2032</option>
+                                            <option>2033</option>
+                                            <option>2034</option>
+                                            <option>2035</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cartao-numero" class="form-label">Número do Cartão</label>
+                                        <input id="cartao-numero" class="form-control" type="text" placeholder="5555 5555 5555 5555">
+                                    </div>
+            
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cartao-codigo" class="form-label">Código de Segurança</label>
+                                        <input id="cartao-codigo" class="form-control" type="password" placeholder="XXX">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="nav-boleto" class="tab-pane fade" role="tabpanel" aria-labelledby="nav-boleto-tab">
+                                <p class="lead">Clique em "Contratar Plano" que enviaremos um boleto para o seu e-mail.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Concordo com os <a href="" class="link-underline link-underline-opacity-0">Termos e Condições</a></label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg mb-4">Contratar Plano</button>
+                </form>
+
+                <div class="col-lg-5 mx-auto my-5 order-lg-1 order-first">
+                    <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
+                    
+                    <div class="bg-light p-4 rounded box-shadow">
+                        <h2>Gold</h2>
+
+                        <ul class="list-unstyled planos-lista">
+                            <li class="p-3">30 dias de viagem</li>
+                            <li class="p-3">3 destinos diferentes</li>
+                            <li class="p-3">Tudo pago pela empresa</li>
+                            <li class="p-3">Ingressos para festas</li>
+                        </ul>
+
+                        <form class="mb-4">
+                            <select id="input-cidades" class="form-select bg-light">
+                                <option selected>Selecione a cidade</option>
+                                <option>Califórnia</option>
+                                <option>Paris</option>
+                                <option>Dublin</option>
+                            </select>  
+                        </form>
+
+                        <div class="row">
+                            <div class="col">
+                                <span class="h4">R$7.500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-dark text-white">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <h4 class="h6">PÁGINAS</h4>
+
+                        <ul class="list-unstyled">
+                            <li><a href="planos.html" class="link-underline link-underline-opacity-0">Planos</a></li>
+                            <li><a href="contato.html" class="link-underline link-underline-opacity-0">Contato</a></li>
+                            <li><a href="inscricao.html" class="link-underline link-underline-opacity-0">Inscreva-se</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <h4 class="h6">LOCAIS</h4>
+
+                        <ul class="list-unstyled">
+                            <li><a href="local.html" class="link-underline link-underline-opacity-0">California</a></li>
+                            <li><a href="local.html" class="link-underline link-underline-opacity-0">Paris</a></li>
+                            <li><a href="local.html" class="link-underline link-underline-opacity-0">Dublin</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-6">
+                        <h4 class="h6">DADOS DE CONTATO</h4>
+
+                        <ul class="list-unstyled text-secondary">
+                            <li>caravan@caravan.com.br</li>
+                            <li>22 99999-9999</li>
+                            <li>De Seg. à Sex. das 8h às 18h</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-6">
+                        <h4 class="h6">REDES SOCIAIS</h4>
+
+                        <ul id="redes-sociais" class="list-unstyled">
+                            <li><a href="" class="btn btn-outline-secondary btn-sm d-block mt-3" type="button">Facebook</a></li>
+                            <li><a href="" class="btn btn-outline-secondary btn-sm d-block mt-2" type="button">Twitter</a></li>
+                            <li><a href="" class="btn btn-outline-secondary btn-sm d-block mt-2" type="button">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary text-center py-3">
+                <p class="mb-0">Caravan c 2025. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="modal-login" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal-login-titulo">Entre na sua Conta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="login-email" class="form-label">Email</label>
+                                <input id="login-email" class="form-control" type="email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="login-senha" class="form-label">Senha</label>
+                                <input id="login-senha" class="form-control" type="password">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+
+                            <div class="form-text">Esqueceu a senha? <a href="">Clique aqui.</a></div>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="/javascript/bootstrap.js"></script>
+        <script src="/javascript/script.js"></script>
+    </body>
+</html>

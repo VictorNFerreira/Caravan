@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Caravan - Planos</title>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/estilo.css">
+    </head>
+
+    <body>
+        <nav class="navbar p-3 navbar-expand-md fixed-top bg-light box-shadow">
+            <a class="navbar-brand" href="index.html"><img src="/img/caravan.svg" alt="Caravan"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir Navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown"><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" type="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="local.html">California</a>
+                            <a class="dropdown-item" href="local.html">Paris</a>
+                            <a class="dropdown-item" href="local.html">Dublin</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link active" href="planos.html">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#modal-login">Login</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="text-center my-5">
+                <span class="h6 d-block">SUA VIAGEM, SEU PLANO</span>
+                <h1 class="display-4 text-primary">Escolha o Plano</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md mb-5">
+                    <div class="bg-light p-4 rounded box-shadow">
+                        <h2>Gold</h2>
+
+                        <ul class="list-unstyled planos-lista">
+                            <li class="p-3"><span data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Isso mesmo, São 30 dias de viagem!">30 dias de viagem</span></li>
+                            <li class="p-3">3 destinos diferentes</li>
+                            <li class="p-3">Tudo pago pela empresa</li>
+                            <li class="p-3">Ingressos para festas</li>
+                        </ul>
+
+                        <form class="mb-4">
+                            <select id="input-cidades" class="form-select bg-light">
+                                <option selected>Selecione a cidade</option>
+                                <option>Califórnia</option>
+                                <option>Paris</option>
+                                <option>Dublin</option>
+                            </select>  
+                        </form>
+
+                        <div class="row align-items-center">
+                            <div class="col">
+                               <a href="inscricao.html" class="btn btn-primary btn-lg d-block">Comprar Plano</a> 
+                            </div>
+                            
+                            <div class="col">
+                                <span class="h4">R$5.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md mb-5">
+                    <div class="bg-light p-4 rounded box-shadow">
+                        <h2>Platina <span class="badge text-bg-success">Novo</span></h2>
+
+                        <ul class="list-unstyled planos-lista">
+                            <li class="p-3">60 dias de viagem</li>
+                            <li class="p-3">6 destinos diferentes</li>
+                            <li class="p-3">Tudo pago pela empresa</li>
+                            <li class="p-3">Ingressos para festas</li>
+                        </ul>
+
+                        <form class="mb-4">
+                            <select id="input-cidades" class="form-select bg-light">
+                                <option selected>Selecione a cidade</option>
+                                <option>Califórnia</option>
+                                <option>Paris</option>
+                                <option>Dublin</option>
+                            </select>  
+                        </form>
+
+                        <div class="row align-items-center">
+                            <div class="col">
+                               <a href="inscricao.html" class="btn btn-primary btn-lg d-block">Comprar Plano</a> 
+                            </div>
+                            
+                            <div class="col">
+                                <span class="h4">R$7.500</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-dark text-white">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <h4 class="h6">PÁGINAS</h4>
+
+                        <ul class="list-unstyled">
+                            <li><a href="planos.html" class="link-underline link-underline-opacity-0">Planos</a></li>
+                            <li><a href="contato.html" class="link-underline link-underline-opacity-0">Contato</a></li>
+                            <li><a href="inscricao.html" class="link-underline link-underline-opacity-0">Inscreva-se</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-6">
+                        <h4 class="h6">LOCAIS</h4>
+
+                        <ul class="list-unstyled">
+                            <li><a href="local.html" class="link-underline link-underline-opacity-0">California</a></li>
+                            <li><a href="local.html" class="link-underline link-underline-opacity-0">Paris</a></li>
+                            <li><a href="local.html" class="link-underline link-underline-opacity-0">Dublin</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-6">
+                        <h4 class="h6">DADOS DE CONTATO</h4>
+
+                        <ul class="list-unstyled text-secondary">
+                            <li>caravan@caravan.com.br</li>
+                            <li>22 99999-9999</li>
+                            <li>De Seg. à Sex. das 8h às 18h</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-2 col-6">
+                        <h4 class="h6">REDES SOCIAIS</h4>
+
+                        <ul id="redes-sociais" class="list-unstyled">
+                            <li><a href="" class="btn btn-outline-secondary btn-sm d-block mt-3" type="button">Facebook</a></li>
+                            <li><a href="" class="btn btn-outline-secondary btn-sm d-block mt-2" type="button">Twitter</a></li>
+                            <li><a href="" class="btn btn-outline-secondary btn-sm d-block mt-2" type="button">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-primary text-center py-3">
+                <p class="mb-0">Caravan c 2025. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="modal-login" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal-login-titulo">Entre na sua Conta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="login-email" class="form-label">Email</label>
+                                <input id="login-email" class="form-control" type="email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="login-senha" class="form-label">Senha</label>
+                                <input id="login-senha" class="form-control" type="password">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+
+                            <div class="form-text">Esqueceu a senha? <a href="">Clique aqui.</a></div>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="/javascript/bootstrap.js"></script>
+        <script src="/javascript/script.js"></script>
+    </body>
+</html>
